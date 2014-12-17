@@ -36,6 +36,21 @@ For more information about using Node.js and buildpacks on Heroku, see these Dev
 - [Buildpack API](https://devcenter.heroku.com/articles/buildpack-api)
 
 
+Try npm@next
+------------
+
+Use [the preview](https://github.com/heroku/heroku-buildpack-nodejs/tree/yoga)
+of the upcoming Node buildpack release, which lets you specify a version of
+npm just like you already specify a version of node:
+
+```
+"engines": {
+  "node": "0.10.x",
+  "npm": "2.x"
+}
+```
+
+
 Legacy Compatibility
 --------------------
 
